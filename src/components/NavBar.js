@@ -1,6 +1,13 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
 import Logo from "./Logo";
+import {
+  TwitterIcon,
+  DribbbleIcon,
+  GithubIcon,
+  LinkedInIcon,
+  PinterestIcon,
+} from "./Icons";
 
 const CustomLink = ({ href, title, className = "" }) => {
   const router = useRouter();
@@ -33,22 +40,19 @@ const NavBar = () => {
 
       <nav>
         <Link href="/" targe={"_blank"}>
-          T
+          <TwitterIcon />
         </Link>
         <Link href="/" targe={"_blank"}>
-          T
+          <GithubIcon />
         </Link>
         <Link href="/" targe={"_blank"}>
-          T
+          <LinkedInIcon />
         </Link>
         <Link href="/" targe={"_blank"}>
-          T
+          <PinterestIcon />
         </Link>
         <Link href="/" targe={"_blank"}>
-          T
-        </Link>
-        <Link href="/" targe={"_blank"}>
-          T
+          <DribbbleIcon />
         </Link>
       </nav>
 
