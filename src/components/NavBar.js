@@ -8,6 +8,7 @@ import {
   LinkedInIcon,
   PinterestIcon,
 } from "./Icons";
+import { motion } from "framer-motion";
 
 const CustomLink = ({ href, title, className = "" }) => {
   const router = useRouter();
@@ -38,22 +39,52 @@ const NavBar = () => {
         <CustomLink href="/projects" title="Projects" className="mx-4" />
       </nav>
 
-      <nav>
-        <Link href="/" targe={"_blank"}>
+      <nav className="flex items-center justify-center flex-wrap">
+        <motion.a
+          href="https://twitter.com"
+          targe={"_blank"}
+          whileHover={{ y: -2 }}
+          whileTap={{ scale: 0.9 }}
+          className="w-6 mx-3"
+        >
           <TwitterIcon />
-        </Link>
-        <Link href="/" targe={"_blank"}>
+        </motion.a>
+        <motion.a
+          href="https://twitter.com"
+          targe={"_blank"}
+          whileHover={{ y: -2 }}
+          whileTap={{ scale: 0.9 }}
+          className="w-6 mx-3"
+        >
           <GithubIcon />
-        </Link>
-        <Link href="/" targe={"_blank"}>
+        </motion.a>
+        <motion.a
+          href="https://twitter.com"
+          targe={"_blank"}
+          whileHover={{ y: -2 }}
+          whileTap={{ scale: 0.9 }}
+          className="w-6 mx-3"
+        >
           <LinkedInIcon />
-        </Link>
-        <Link href="/" targe={"_blank"}>
+        </motion.a>
+        <motion.a
+          href="https://twitter.com"
+          targe={"_blank"}
+          whileHover={{ y: -2 }}
+          whileTap={{ scale: 0.9 }}
+          className="w-6 mx-3"
+        >
           <PinterestIcon />
-        </Link>
-        <Link href="/" targe={"_blank"}>
+        </motion.a>
+        <motion.a
+          href="https://twitter.com"
+          targe={"_blank"}
+          whileHover={{ y: -2 }}
+          whileTap={{ scale: 0.9 }}
+          className="w-6 ml-3"
+        >
           <DribbbleIcon />
-        </Link>
+        </motion.a>
       </nav>
 
       <div className="absolute left-[50%] top-2 translate-x-[-50%]">
