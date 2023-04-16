@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+import { color, motion } from "framer-motion";
 
 const quote = {
   initial: {
@@ -39,8 +39,9 @@ const AnimatedText = ({ text, className = "" }) => {
         {text.split(" ").map((word, index) => (
           <motion.span
             key={word + "-" + index}
-            className="inline-block"
+            className="inline-block cursor-pointer"
             variants={singleWord}
+            whileHover={{ scale: 1.05, color: "#ff0000" }}
           >
             {word}&nbsp;
           </motion.span>

@@ -22,9 +22,10 @@ export default function Home() {
               />
             </div>
             <div className="w-1/2 flex flex-col items-center self-center">
+              <AnimatedText text="Hi there," className="!text-5xl !text-left" />
               <AnimatedText
-                text="Turning Vision Into Reality With Code And Design."
-                className="!text-6xl !text-left"
+                text="I'm Parsa Peikani, a self-made software engineer :)"
+                className="!text-5xl !text-left"
               />
               <p>
                 {" "}
