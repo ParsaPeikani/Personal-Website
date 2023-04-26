@@ -39,9 +39,8 @@ const AnimatedText = ({ text, className = "" }) => {
         {text.split(" ").map((word, index) => (
           <motion.span
             key={word + "-" + index}
-            className="inline-block cursor-pointer"
+            className="inline-block cursor-pointer hover:animate-rubberBand hover:text-red-500"
             variants={singleWord}
-            whileHover={{ scale: 1.05, color: "#ff0000" }}
           >
             {word}&nbsp;
           </motion.span>
