@@ -5,6 +5,7 @@ import Image from "next/image";
 import profilePic from "../../public/images/profile/hacker.gif";
 import AnimatedText from "@/components/AnimatedText";
 import { LinkArrow } from "@/components/Icons";
+import HireMe from "@/components/HireMe";
 
 export default function Home() {
   return (
@@ -56,6 +57,7 @@ export default function Home() {
             </div>
           </div>
         </Layout>
+        <HireMe />
       </main>
     </>
   );

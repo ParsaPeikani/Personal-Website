@@ -51,6 +51,7 @@ module.exports = {
       animation: {
         wiggle: "wiggle 2s ease infinite alternate",
         rubberBand: "rubberBand 1s ease",
+        "spin-slow": "spin 8s linear infinite",
       },
     },
   },
