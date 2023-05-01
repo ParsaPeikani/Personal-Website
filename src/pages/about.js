@@ -35,10 +35,6 @@ const AnimatedNumbers = ({ value }) => {
 const about = () => {
   return (
     <>
-      <Head>
-        <title>Parsa Peikani | About Page</title>
-        <meta name="description" content="any description" />
-      </Head>
       <main className="flex w-full flex-col items-center justify-center">
         <Layout className="pt-16">
           <AnimatedText text="Passion Fuels Purpose! " className="mb-16" />
