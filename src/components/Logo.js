@@ -18,6 +18,9 @@ const Logo = () => {
             "rgba(131,58,180,1)",
             "#121212",
           ],
+          scale: [1, 1.2, 1.2, 1],
+          rotate: [0, 360],
+          borderRadius: ["20%", "20%", "50%", "50%", "20%"],
           transition: { duration: 1, repeat: Infinity },
         }}
       >
