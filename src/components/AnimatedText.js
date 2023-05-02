@@ -1,4 +1,5 @@
 import { color, motion } from "framer-motion";
+import useThemeSwitcher from "./hooks/useThemeSwitcher";
 
 const quote = {
   initial: {
@@ -28,6 +29,7 @@ const singleWord = {
 };
 
 const AnimatedText = ({ text, className = "" }) => {
+  const [mode, setMode] = useThemeSwitcher();
   return (
     <div className="w-full mx-auto py-2 flex items-center justify-center text-center ">
       <motion.h1
@@ -39,7 +41,11 @@ const AnimatedText = ({ text, className = "" }) => {
         {text.split(" ").map((word, index) => (
           <motion.span
             key={word + "-" + index}
-            className="inline-block cursor-pointer hover:animate-rubberBand hover:text-red-500"
+            className={`inline-block cursor-pointer hover:animate-rubberBand ${
+              mode === "light"
+                ? "hover:text-purple-400"
+                : "hover:text-purple-400"
+            }`}
             variants={singleWord}
           >
             {word}&nbsp;

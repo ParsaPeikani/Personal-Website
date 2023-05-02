@@ -8,6 +8,7 @@ import { useEffect, useRef } from "react";
 import Skills from "@/components/Skills";
 import Experience from "@/components/Experience";
 import Education from "@/components/Education";
+import NavBar from "@/components/NavBar";
 
 const AnimatedNumbers = ({ value }) => {
   const ref = useRef(null);
@@ -35,6 +36,7 @@ const AnimatedNumbers = ({ value }) => {
 const about = () => {
   return (
     <>
+      <NavBar />
       <main className="flex w-full flex-col items-center justify-center">
         <Layout className="pt-16">
           <AnimatedText text="Passion Fuels Purpose! " className="mb-16" />
