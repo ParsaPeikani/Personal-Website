@@ -7,7 +7,6 @@ import profilePic from "../../public/images/profile/hacker.gif";
 import AnimatedText from "@/components/AnimatedText";
 import { LinkArrow } from "@/components/Icons";
 import HireMe from "@/components/HireMe";
-import lightBulb from "../../public/images/svgs/miscellaneous_icons_1.svg";
 import NavBar from "@/components/NavBar";
 
 export default function Home() {
@@ -77,14 +76,30 @@ export default function Home() {
           <>
             <Layout className="pt-0">
               <div className="flex items-center justify-between w-full">
-                <div className="w-1/3 md:w-2/5 animate-wiggle">
+                <motion.div
+                  className="w-1/3 md:w-2/5 animate-wiggle"
+                  initial={{ opacity: 0, y: -50, scale: 0.8 }}
+                  animate={{
+                    opacity: 1,
+                    y: 0,
+                    scale: 1,
+                    transition: {
+                      delay: 0.6,
+                      duration: 1.5,
+                      ease: [0.6, -0.05, 0.01, 0.9],
+                    },
+                  }}
+                >
                   <Image
                     src={profilePic}
                     alt="CodeBucks"
                     className="mx-auto w-full h-auto"
                     priority={true}
+                    sizes="(max-width: 768px) 100vw,
+                    (max-width: 1200px) 50vw,
+                    50vw"
                   />
-                </div>
+                </motion.div>
                 <div className="w-1/2 flex flex-col items-center self-center">
                   <AnimatedText
                     text="Hi there,"
@@ -94,40 +109,54 @@ export default function Home() {
                     text="I'm Parsa Peikani, a self-made software engineer :)"
                     className="!text-5xl !text-left"
                   />
-                  <p className="my-4 text-base font-medium">
+                  <motion.p
+                    className="my-4 text-base font-medium"
+                    initial={{ opacity: 0, y: -20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 1, ease: "easeInOut" }}
+                  >
                     {" "}
                     As a skilled full-stack developer, I am dedicated to turning
                     ideas into innovative web applications. Explore my latest
                     projects and articles, showcasing my expertise in React.js
                     and web development.
-                  </p>
+                  </motion.p>
                   <div className="flex items-center self-start mt-2">
-                    <a
+                    <motion.a
+                      initial={{ opacity: 0, x: -80 }}
+                      animate={{ opacity: 1, x: 0 }}
+                      transition={{
+                        duration: 1,
+                        ease: "easeInOut",
+                        delay: 0.5,
+                      }}
                       href="/dummy.pdf"
                       target={"_blank"}
                       className="flex items-center bg-dark dark:bg-yellow-400 text-light dark:text-dark p-2.5 px-6 rounded-lg font-semibold hover:bg-light hover:text-dark border-2 border-solid border-transparent hover:border-dark hover:dark:bg-dark hover:dark:border-yellow-400 hover:dark:text-yellow-400"
                       download={true}
                     >
                       Resume <LinkArrow className={"w-6 ml-1"} />
-                    </a>
-                    <a
+                    </motion.a>
+                    <motion.a
+                      initial={{ opacity: 0, x: 80 }}
+                      animate={{ opacity: 1, x: 0 }}
+                      transition={{
+                        duration: 1,
+                        ease: "easeInOut",
+                        delay: 0.5,
+                      }}
                       href="mailto:parsapeikani05@gmail.com"
                       target={"_blank"}
                       className="ml-4 text-lg font-medium capitalize text-dark underline dark:text-yellow-400"
                     >
                       Contact
-                    </a>
+                    </motion.a>
                   </div>
                 </div>
               </div>
             </Layout>
-            <HireMe />
-            <div className="absolute right-8 bottom-8 inline-block w-24">
-              <Image
-                src={lightBulb}
-                alt="ParsaPeikani"
-                className="w-full h-auto"
-              />
+            <div>
+              <HireMe />
             </div>
           </>
         )}

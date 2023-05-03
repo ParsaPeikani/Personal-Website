@@ -35,65 +35,105 @@ const CustomLink = ({ href, title, className = "" }) => {
 
 const NavBar = () => {
   const [mode, setMode] = useThemeSwitcher();
-
+  const links = [
+    { href: "/", title: "Home", className: "mr-4" },
+    { href: "/about", title: "About", className: "mx-4" },
+    { href: "/projects", title: "Projects", className: "mx-4" },
+  ];
+  const NavLink = ({ href, title, className }) => {
+    return <CustomLink href={href} title={title} className={className} />;
+  };
   return (
     <header className="w-full px-32 py-8 font-medium flex items-center justify-between dark:text-yellow-400">
-      <nav>
-        <CustomLink href="/" title="Home" className="mr-4" />
-        <CustomLink href="/about" title="About" className="mx-4" />
-        <CustomLink href="/projects" title="Projects" className="mx-4" />
-      </nav>
+      <motion.nav initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
+        <motion.nav className="flex gap-4">
+          {links.map((link, index) => (
+            <motion.div
+              key={link.href}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: (links.length - index - 1) * 0.3 }}
+            >
+              <NavLink
+                href={link.href}
+                title={link.title}
+                className={link.className}
+              />
+            </motion.div>
+          ))}
+        </motion.nav>
+      </motion.nav>
 
-      <nav className="flex items-center justify-center flex-wrap">
+      <motion.nav className="flex items-center justify-center flex-wrap">
         <motion.a
+          key="twitter-icon"
           href="https://twitter.com"
-          targe={"_blank"}
+          target={"_blank"}
           whileHover={{ y: -2 }}
           whileTap={{ scale: 0.9 }}
+          initial={{ opacity: 0, transition: { delay: 0.4 } }}
+          animate={{ opacity: 1, transition: { delay: 0.4 } }}
           className="w-8 mx-3"
         >
           <TwitterIcon />
         </motion.a>
         <motion.a
-          href="https://twitter.com"
-          targe={"_blank"}
+          key="github-icon"
+          href="https://github.com"
+          target={"_blank"}
           whileHover={{ y: -2 }}
           whileTap={{ scale: 0.9 }}
+          initial={{ opacity: 0, transition: { delay: 0.6 } }}
+          animate={{ opacity: 1, transition: { delay: 0.6 } }}
           className="w-8 mx-3"
         >
           <GithubIcon />
         </motion.a>
         <motion.a
-          href="https://twitter.com"
-          targe={"_blank"}
+          key="linkedin-icon"
+          href="https://linkedin.com"
+          target={"_blank"}
           whileHover={{ y: -2 }}
           whileTap={{ scale: 0.9 }}
+          initial={{ opacity: 0, transition: { delay: 0.8 } }}
+          animate={{ opacity: 1, transition: { delay: 0.8 } }}
           className="w-8 mx-3"
         >
           <LinkedInIcon />
         </motion.a>
-
-        <button
+        <motion.button
+          key="mode-button"
           className={`ml-3 flex items-center justify-center rounded-full p-1 w-12 h-12
-          ${
-            mode === "light"
-              ? "bg-yellow-400 text-dark"
-              : "bg-purple-400 text-yellow-400"
-          }
-          `}
+      ${
+        mode === "light"
+          ? "bg-yellow-400 text-dark"
+          : "bg-purple-400 text-yellow-400"
+      }
+    `}
           onClick={() => setMode(mode === "light" ? "dark" : "light")}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 1 }}
         >
           {mode === "dark" ? (
             <SunIcon className={"fill-dark w-6"} />
           ) : (
             <MoonIcon className={"fill-dark w-6"} />
           )}
-        </button>
-      </nav>
+        </motion.button>
+      </motion.nav>
 
-      <div className="absolute left-[50%] top-2 translate-x-[-50%]">
+      <motion.div
+        className="absolute left-[50%] top-2 translate-x-[-50%]"
+        initial={{ opacity: 0, scale: 0 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{
+          duration: 2,
+          ease: "easeInOut",
+        }}
+      >
         <Logo />
-      </div>
+      </motion.div>
     </header>
   );
 };

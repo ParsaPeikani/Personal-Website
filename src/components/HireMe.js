@@ -1,9 +1,15 @@
 import Link from "next/link";
+import { motion } from "framer-motion";
 import { CircularText } from "./Icons";
 
 const HireMe = () => {
   return (
-    <div className="fixed left-4 bottom-4 flex items-center justify-center overflow-hidden">
+    <motion.div
+      className="fixed right-4 bottom-4 flex items-center justify-center overflow-hidden"
+      initial={{ opacity: 0, rotate: 360 }}
+      animate={{ opacity: 1, rotate: 0 }}
+      transition={{ duration: 2, ease: "easeInOut" }}
+    >
       <div className="w-48 h-auto flex items-center justify-center relative">
         <CircularText
           className={"fill-dark animate-spin-slow dark:fill-yellow-400"}
@@ -18,7 +24,7 @@ const HireMe = () => {
           Hire Me
         </Link>
       </div>
-    </div>
+    </motion.div>
   );
 };
 export default HireMe;
