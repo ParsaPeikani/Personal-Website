@@ -196,7 +196,7 @@ const projects = () => {
               <motion.div
                 initial="offscreen"
                 whileInView="onscreen"
-                viewport={{ once: true, amount: 0.2 }}
+                viewport={{ once: true, amount: 0.1 }}
                 variants={top1Variant}
               >
                 <div className="col-span-12">
