@@ -37,6 +37,10 @@ const AnimatedNumbers = ({ value }) => {
 const about = () => {
   return (
     <>
+      <Head>
+        <title>Parsa Peikani | About Page</title>
+        <meta name="description" content="any description" />
+      </Head>
       <NavBar />
       <main className="flex w-full flex-col items-center justify-center dark:text-yellow-400">
         <Layout className="pt-16">
@@ -116,25 +120,35 @@ const about = () => {
             </div>
             <div className="col-span-2 flex flex-col items-end justify-between">
               <div className="flex flex-col items-end justify-center">
-                <span className="inline-block text-7xl font-bold hover:animate-rubberBand hover:text-red-500 cursor-pointer">
+                <span className="inline-block text-7xl font-bold hover:animate-rubberBand cursor-pointer hover:text-purple-400">
                   <AnimatedNumbers value={50} />+
                 </span>
-                <h2 className="text-xl font-medium capitalize text-dark/75 dark:text-yellow-400/75">
+                <motion.h2
+                  className="text-xl font-medium capitalize text-dark/75  dark:text-yellow-400/75"
+                  initial={{ opacity: 0, x: -50 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 2 }}
+                >
                   satisfied clients
-                </h2>
+                </motion.h2>
               </div>
 
               <div className="flex flex-col items-end justify-center">
-                <span className="inline-block text-7xl font-bold hover:animate-rubberBand hover:text-red-500 cursor-pointer">
+                <span className="inline-block text-7xl font-bold hover:animate-rubberBand hover:text-purple-400 cursor-pointer">
                   <AnimatedNumbers value={40} />+
                 </span>
-                <h2 className="text-xl font-medium capitalize text-dark/75 dark:text-yellow-400/75">
+                <motion.h2
+                  className="text-xl font-medium capitalize text-dark/75 dark:text-yellow-400/75"
+                  initial={{ opacity: 0, x: 50 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 2 }}
+                >
                   projects completed
-                </h2>
+                </motion.h2>
               </div>
 
               <div className="flex flex-col items-end justify-center">
-                <span className="inline-block text-7xl font-bold hover:animate-rubberBand hover:text-red-500 cursor-pointer">
+                <span className="inline-block text-7xl font-bold hover:animate-rubberBand hover:text-purple-400 cursor-pointer">
                   <AnimatedNumbers value={4} />+
                 </span>
                 <h2 className="text-xl font-medium capitalize text-dark/75 dark:text-yellow-400/75">

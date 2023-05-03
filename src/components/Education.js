@@ -34,7 +34,7 @@ const Education = () => {
   return (
     <div className="my-64">
       <motion.h2
-        className="font-bold text-8xl mb-32 w-full text-center hover:animate-rubberBand hover:text-red-500 cursor-pointer"
+        className="font-bold text-8xl mb-32 w-full text-center hover:animate-rubberBand hover:text-purple-400 cursor-pointer"
         initial={{ opacity: 0, y: 80 }}
         whileInView={{ opacity: 1, y: 0, transition: { duration: 0.5 } }}
         viewport={{ once: true }}

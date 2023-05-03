@@ -18,7 +18,7 @@ const Skills = () => {
   return (
     <>
       <motion.h2
-        className="font-bold text-8xl mt-64 w-full text-center hover:animate-rubberBand cursor-pointer hover:text-red-500"
+        className="font-bold text-8xl mt-64 w-full text-center hover:animate-rubberBand cursor-pointer hover:text-purple-400"
         initial={{ opacity: 0, y: 80 }}
         whileInView={{ opacity: 1, y: 0, transition: { duration: 0.5 } }}
         viewport={{ once: true }}

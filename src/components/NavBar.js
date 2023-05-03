@@ -103,17 +103,18 @@ const NavBar = () => {
         </motion.a>
         <motion.button
           key="mode-button"
-          className={`ml-3 flex items-center justify-center rounded-full p-1 w-12 h-12
-      ${
-        mode === "light"
-          ? "bg-yellow-400 text-dark"
-          : "bg-purple-400 text-yellow-400"
-      }
-    `}
+          className={`ml-3 flex items-center justify-center rounded-full p-1 w-10 h-10
+    ${
+      mode === "light"
+        ? "bg-yellow-400 text-dark"
+        : "bg-purple-400 text-yellow-400"
+    }
+  `}
           onClick={() => setMode(mode === "light" ? "dark" : "light")}
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 1 }}
+          initial={{ opacity: 0, transition: { delay: 1 } }}
+          animate={{ opacity: 1, transition: { delay: 1 } }}
+          whileHover={{ scale: 1.2 }}
+          whileTap={{ scale: 0.9 }}
         >
           {mode === "dark" ? (
             <SunIcon className={"fill-dark w-6"} />

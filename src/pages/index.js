@@ -15,7 +15,7 @@ export default function Home() {
   useEffect(() => {
     setTimeout(() => {
       setShowLogo(false);
-    }, 3000);
+    }, 4000);
   }, []);
 
   const [showNavBar, setShowNavBar] = useState(false);
