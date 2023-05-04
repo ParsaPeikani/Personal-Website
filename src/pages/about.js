@@ -10,6 +10,7 @@ import Skills from "@/components/Skills";
 import Experience from "@/components/Experience";
 import Education from "@/components/Education";
 import NavBar from "@/components/NavBar";
+import Contact from "@/components/Footer";
 
 const AnimatedNumbers = ({ value }) => {
   const ref = useRef(null);
@@ -162,6 +163,7 @@ const about = () => {
           <Education />
         </Layout>
       </main>
+      <Contact />
     </>
   );
 };
