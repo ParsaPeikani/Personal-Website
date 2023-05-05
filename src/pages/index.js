@@ -81,16 +81,16 @@ export default function Home() {
                     className="!text-5xl !text-left"
                   />
                   <motion.p
-                    className="my-4 text-base font-medium"
+                    className="my-4 text-base font-medium text-justify"
                     initial={{ opacity: 0, y: -20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1, ease: "easeInOut" }}
                   >
                     {" "}
-                    As a skilled full-stack developer, I am dedicated to turning
-                    ideas into innovative web applications. Explore my latest
-                    projects and articles, showcasing my expertise in React.js
-                    and web development.
+                    As a dedicated full-stack developer, I am passionate about
+                    transforming ideas into cutting-edge web applications. I
+                    invite you to explore my portfolio and projects, where you
+                    can witness my expertise in React.js and web development.
                   </motion.p>
                   <div className="flex items-center self-start mt-2">
                     <motion.a
