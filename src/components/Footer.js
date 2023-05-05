@@ -64,7 +64,7 @@ const Contact = () => {
       );
   };
   return (
-    <div>
+    <div className="overflow-x-hidden">
       <h1 className="dark:text-yellow-400/75 text-3xl text-center">
         Get In Touch
       </h1>
@@ -78,6 +78,7 @@ const Contact = () => {
           initial={{ opacity: 0, x: -300 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 1.5, ease: "easeInOut" }}
+          viewport={{ once: true, amount: 0.2 }}
         >
           <form
             ref={formRef}
@@ -122,17 +123,18 @@ const Contact = () => {
 
             <button
               type="submit"
-              className="w-fit bg-dark dark:bg-yellow-400 text-light dark:text-dark p-2.5 px-16 rounded-lg font-semibold hover:bg-light hover:text-dark border-2 border-solid border-transparent hover:border-dark hover:dark:bg-dark mx-auto hover:dark:border-yellow-400 hover:dark:text-yellow-400 flex justify-center"
+              className="mx-auto mr-48 bg-dark dark:bg-yellow-400 text-light dark:text-dark p-2.5 px-16 rounded-lg font-semibold hover:bg-light hover:text-dark border-2 border-solid border-transparent hover:border-dark hover:dark:bg-dark hover:dark:border-yellow-400 hover:dark:text-yellow-400"
             >
               {loading ? "Sending..." : "Send"}
             </button>
           </form>
         </motion.div>
         <motion.div
-          className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px] w-1/2"
+          className="xl:flex-1 xl:h-auto md:h-[550px] h-[550px] w-1/2 cursor-pointer"
           initial={{ opacity: 0, x: 300 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 1.5, ease: "easeInOut" }}
+          viewport={{ once: true, amount: 0.2 }}
         >
           <Earth />
         </motion.div>

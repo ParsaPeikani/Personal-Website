@@ -5,7 +5,7 @@ import Head from "next/head";
 import Image from "next/image";
 import { Hexagon } from "@/components/Icons";
 import { Pletter } from "@/components/Icons";
-import profilePic from "../../public/images/profile/hacker.gif";
+import profilePic from "../../public/images/profile/hacker2.gif";
 import AnimatedText from "@/components/AnimatedText";
 import { LinkArrow } from "@/components/Icons";
 import HireMe from "@/components/HireMe";
@@ -60,14 +60,16 @@ export default function Home() {
                     },
                   }}
                 >
-                  <Image
-                    src={profilePic}
-                    alt="CodeBucks"
-                    priority={true}
-                    sizes="(max-width: 768px) 100vw,
+                  <div className="flex pt-14">
+                    <Image
+                      src={profilePic}
+                      alt="CodeBucks"
+                      priority={true}
+                      sizes="(max-width: 768px) 100vw,
                     (max-width: 1200px) 50vw,
                     50vw"
-                  />
+                    />
+                  </div>
                 </motion.div>
                 <div className="w-1/2 flex flex-col items-center self-center pt-14">
                   <AnimatedText
