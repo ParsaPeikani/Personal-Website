@@ -113,7 +113,7 @@ const about = () => {
                   alt="Parsa Peikani"
                   className="w-full h-auto rounded-2xl"
                   priority={true}
-                  sizes="(max-width: 768px) 100vw,
+                  sizes="(max-width: 868px) 100vw,
                       (max-width: 1200px) 50vw,
                       33vw"
                 />
