@@ -136,7 +136,7 @@ const about = () => {
 
               <div className="flex flex-col items-end justify-center">
                 <span className="inline-block text-7xl font-bold hover:animate-rubberBand hover:text-purple-400 cursor-pointer">
-                  <AnimatedNumbers value={40} />+
+                  <AnimatedNumbers value={10} />+
                 </span>
                 <motion.h2
                   className="text-xl font-medium capitalize text-dark/75 dark:text-yellow-400/75"

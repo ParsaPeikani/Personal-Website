@@ -32,20 +32,22 @@ const Skills = () => {
         >
           Web
         </motion.div>
-        <Skill name="HTML" x="-25vw" y="3vw" />
-        <Skill name="CSS" x="-6vw" y="-11vw" />
+        <Skill name="HTML" x="-16vw" y="13vw" />
+        <Skill name="CSS" x="-12vw" y="-9vw" />
         <Skill name="Javascript" x="17vw" y="6vw" />
-        <Skill name="ReactJS" x="0vw" y="12vw" />
-        <Skill name="NextJS" x="-20vw" y="-15vw" />
-        <Skill name="GatsbyJS" x="16vw" y="-12vw" />
-        <Skill name="Web Design" x="32vw" y="-5vw" />
-        <Skill name="Figma" x="0vw" y="-20vw" />
-        <Skill name="Firebase" x="-25vw" y="18vw" />
-        <Skill name="Java" x="-14vw" y="8vw" />
-        <Skill name="Python" x="-13vw" y="-1vw" />
-        <Skill name="Remix" x="-33vw" y="-2vw" />
-        <Skill name="Git" x="10vw" y="-5vw" />
+        <Skill name="ReactJS" x="4vw" y="-12vw" />
+        <Skill name="C" x="-21vw" y="-15vw" />
+        <Skill name="NextJS" x="12vw" y="-4vw" />
+        <Skill name="Git" x="33vw" y="0vw" />
+        <Skill name="Typescript" x="0vw" y="-20vw" />
+        <Skill name="Firebase" x="-30vw" y="8vw" />
+        <Skill name="Java" x="-1vw" y="12vw" />
+        <Skill name="Python" x="-12vw" y="3vw" />
+        <Skill name="Remix" x="-26vw" y="-4vw" />
         <Skill name="prisma" x="14vw" y="18vw" />
+        <Skill name="Tailwind css" x="20vw" y="-10vw" />
+        <Skill name="MongoDB" x="-13vw" y="23vw" />
+        <Skill name="Sass" x="17vw" y="-21vw" />
       </div>
     </>
   );

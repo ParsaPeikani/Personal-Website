@@ -101,7 +101,7 @@ export default function Home() {
                         ease: "easeInOut",
                         delay: 0.5,
                       }}
-                      href="/dummy.pdf"
+                      href="/resume.pdf"
                       target={"_blank"}
                       className="flex items-center bg-dark dark:bg-yellow-400 text-light dark:text-dark p-2.5 px-6 rounded-lg font-semibold hover:bg-light hover:text-dark border-2 border-solid border-transparent hover:border-dark hover:dark:bg-dark hover:dark:border-yellow-400 hover:dark:text-yellow-400"
                       download={true}
