@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import AnimatedText from "./AnimatedText";
 
 const Skill = ({ name, x, y }) => {
   return (
@@ -17,14 +18,10 @@ const Skill = ({ name, x, y }) => {
 const Skills = () => {
   return (
     <>
-      <motion.h2
-        className="font-bold text-8xl mt-64 w-full text-center hover:animate-rubberBand cursor-pointer hover:text-purple-400"
-        initial={{ opacity: 0, y: 80 }}
-        whileInView={{ opacity: 1, y: 0, transition: { duration: 0.5 } }}
-        viewport={{ once: true }}
-      >
-        Skills
-      </motion.h2>
+      <AnimatedText
+        text="Skills"
+        className="text-yellow-400 text-center text-8xl font-bold pb-10 pt-40"
+      />
       <div className="w-full h-screen relative flex items-center justify-center rounded-full bg-circularLight dark:bg-circularDark">
         <motion.div
           className="flex items-center justify-center rounded-full font-semibold bg-dark text-light p-8 shadow-dark cursor-pointer dark:text-dark dark:bg-yellow-400"

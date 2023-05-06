@@ -1,4 +1,5 @@
 import { motion, useScroll } from "framer-motion";
+import AnimatedText from "./AnimatedText";
 import { useRef } from "react";
 import LiIcon from "./LiIcon";
 
@@ -42,14 +43,10 @@ const Experience = () => {
   });
   return (
     <div className="my-64">
-      <motion.h2
-        className="font-bold text-8xl mb-32 w-full text-center hover:animate-rubberBand hover:text-purple-400 cursor-pointer"
-        initial={{ opacity: 0, y: 80 }}
-        whileInView={{ opacity: 1, y: 0, transition: { duration: 0.5 } }}
-        viewport={{ once: true }}
-      >
-        Experience
-      </motion.h2>
+      <AnimatedText
+        text="Experience"
+        className="text-yellow-400 text-center text-8xl font-bold pb-36"
+      />
       <div ref={ref} className="w-[75%] mx-auto relative">
         <motion.div
           style={{ scaleY: scrollYProgress }}
@@ -57,24 +54,23 @@ const Experience = () => {
         />
         <ul className="w-full flex flex-col items-start justify-between ml-4">
           <Details
-            position="Software Engineer"
-            company="Google"
+            position="Customer Service"
+            company="Pizza Hut"
             companyLink="www.google.com"
             time="2022-Present"
-            address="Mountain View, CA"
-            work="Worked on a team responsible for developing new features for Google's 
-          search engine, including improving the accuracy and relevance of search results and 
-          developing new tools for data analysis and visualization."
+            address="Victoria, CA"
+            work="Developed strong multitasking skills by working effectively with team members to complete tasks and achieve goals, which led
+            to a more cohesive and productive teamwork. Assisted in training new team members, effectively leading and guiding them through the on‑boarding process to ensure their
+            success in their new roles."
           />
           <Details
-            position="Software Engineer"
-            company="Google"
+            position="Cashier"
+            company="Tim Horton"
             companyLink="www.google.com"
-            time="2022-Present"
-            address="Mountain View, CA"
-            work="Worked on a team responsible for developing new features for Google's 
-          search engine, including improving the accuracy and relevance of search results and 
-          developing new tools for data analysis and visualization."
+            time="2021-2022"
+            address="Victoria, CA"
+            work="Demonstrated strong skills in managing multiple responsibilities simultaneously, including preparing orders and handling customer
+            transactions, resulting in improved satisfaction and a better overall customer experience. Exhibited strong leadership skills by effectively managing a team during peak hours to improve customer satisfaction."
           />
         </ul>
       </div>

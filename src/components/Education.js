@@ -1,4 +1,5 @@
 import { motion, useScroll } from "framer-motion";
+import AnimatedText from "./AnimatedText";
 import { useRef } from "react";
 import LiIcon from "./LiIcon";
 
@@ -33,14 +34,10 @@ const Education = () => {
   });
   return (
     <div className="my-64">
-      <motion.h2
-        className="font-bold text-8xl mb-32 w-full text-center hover:animate-rubberBand hover:text-purple-400 cursor-pointer"
-        initial={{ opacity: 0, y: 80 }}
-        whileInView={{ opacity: 1, y: 0, transition: { duration: 0.5 } }}
-        viewport={{ once: true }}
-      >
-        Education
-      </motion.h2>
+      <AnimatedText
+        text="Education"
+        className="text-yellow-400 text-center text-8xl font-bold pb-32"
+      />
       <div ref={ref} className="w-[75%] mx-auto relative">
         <motion.div
           style={{ scaleY: scrollYProgress }}
@@ -49,17 +46,16 @@ const Education = () => {
         <ul className="w-full flex flex-col items-start justify-between ml-4">
           <Details
             type="Bachelor Of Science In Computer Science"
-            time="2016-2020"
-            place="Massachusetts Institute Of Technology (MIT)"
+            time="2022-present"
+            place="University of Victoria (UVIC)"
             info="Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial 
             Intelligence."
           />
           <Details
-            type="Bachelor Of Science In Computer Science"
-            time="2016-2020"
-            place="Massachusetts Institute Of Technology (MIT)"
-            info="Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial 
-            Intelligence."
+            type="Bachelor Of Science In Biochemisty"
+            time="2020-2022"
+            place="University of Victoria (UVIC)"
+            info="Related courses included Organic Molecules, Types of Reactions, Metabolism and Regulation, and Enzymology."
           />
         </ul>
       </div>
