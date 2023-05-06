@@ -5,8 +5,69 @@ import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
 import { GithubIcon } from "@/components/Icons";
-import project1 from "../../public/images/projects/crypto-screener-cover-image.jpg";
+import project1 from "../../public/images/projects/project1.jpg";
+import project2 from "../../public/images/projects/project2.png";
+import project3 from "../../public/images/projects/project3.png";
+import project4 from "../../public/images/projects/project4.png";
+import project5 from "../../public/images/projects/project5.jpg";
+import project6 from "../../public/images/projects/project6.png";
 import NavBar from "@/components/NavBar";
+
+const UpcomingProject = ({ type, title, summary, img, link, github }) => {
+  return (
+    <motion.article className="w-full rounded-br-2xl relative flex items-center justify-between rounded-3xl border border-solid border-dark bg-light shadow-2xl p-12 dark:bg-dark dark:border-yellow-400">
+      <div className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2.5rem] bg-dark rounded-br-3xl dark:bg-yellow-400" />
+      <Link
+        href={link}
+        target="_blank"
+        className="w-1/2 cursor-pointer overflow-hidden rounded-lg"
+      >
+        <Image
+          src={img}
+          alt={title}
+          className="w-full h-auto"
+          priority={true}
+          sizes="(max-width: 768px) 100vw,
+        (max-width: 1200px) 50vw,
+        50vw"
+        />
+      </Link>
+      <div className="w-1/2 flex flex-col items-start justify-between pl-6 pt-0">
+        <span className="text-primary font-medium text-xl dark:text-yellow-400">
+          {type}
+        </span>
+        <Link
+          href={link}
+          target="_blank"
+          className="hover:underline underline-offset-2"
+        >
+          <h2 className="my-2 w-full text-left text-4xl font-bold dark:text-yellow-400">
+            {title}
+          </h2>
+        </Link>
+        <p className="my-2 font-medium text-dark dark:text-yellow-400">
+          {summary}
+        </p>
+        <div className="mt-2 flex items-center">
+          <Link
+            href={github}
+            target="_blank"
+            className="w-10 transition-transform duration-300 transform hover:scale-125"
+          >
+            <GithubIcon className="dark:text-yellow-400" />
+          </Link>
+          <Link
+            href={link}
+            target="_blank"
+            className="ml-4 rounded-lg bg-dark text-light p-2 px-6 text-lg font-semibold hover:animate-pulse dark:bg-yellow-400 dark:text-dark"
+          >
+            Coming soon :)
+          </Link>
+        </div>
+      </div>
+    </motion.article>
+  );
+};
 
 const FeaturedProject = ({ type, title, summary, img, link, github }) => {
   return (
@@ -201,12 +262,12 @@ const projects = () => {
               >
                 <div className="col-span-12">
                   <FeaturedProject
-                    title="Crypto Screener Application"
+                    title="Sports Shop Online Website"
                     img={project1}
                     summary="A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your local currency."
-                    link="/"
-                    type="Featured Project"
-                    github="/"
+                    link="https://jade-valkyrie-9b0f5a.netlify.app"
+                    type="Solo Project"
+                    github="https://github.com/ParsaPeikani/E-commerce-Project"
                   />
                 </div>
               </motion.div>
@@ -219,14 +280,14 @@ const projects = () => {
               variants={leftVariant}
             >
               <Project
-                title="Crypto Screener Application"
-                img={project1}
+                title="2D SeaSavior Game"
+                img={project2}
                 summary="A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
                 It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
                 local currency."
-                link="/"
-                type="Featured Project"
-                github="/"
+                link="https://visionary-snickerdoodle-039f3a.netlify.app/"
+                type="Solo Project"
+                github="https://github.com/Weekendend/2D-Game-JavaScript"
               />
             </motion.div>
             <motion.div
@@ -237,14 +298,14 @@ const projects = () => {
               variants={rightVariant}
             >
               <Project
-                title="Crypto Screener Application"
-                img={project1}
+                title="Chess"
+                img={project3}
                 summary="A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
                     It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
                     local currency."
-                link="/"
-                type="Featured Project"
-                github="/"
+                link="https://www.youtube.com/watch?v=3HL7d-s5VCI"
+                type="Group Project"
+                github="https://github.com/shadizx/ChessPython"
               />
             </motion.div>
             <motion.div
@@ -254,13 +315,13 @@ const projects = () => {
               viewport={{ once: true, amount: 0.2 }}
               variants={top2Variant}
             >
-              <FeaturedProject
-                title="Crypto Screener Application"
-                img={project1}
+              <UpcomingProject
+                title="Twitter Clone"
+                img={project4}
                 summary="A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your local currency."
                 link="/"
-                type="Featured Project"
-                github="/"
+                type="Solo Project"
+                github="https://github.com/ParsaPeikani/twitter_clone"
               />
             </motion.div>
             <motion.div
@@ -271,14 +332,14 @@ const projects = () => {
               variants={leftVariant}
             >
               <Project
-                title="Crypto Screener Application"
-                img={project1}
+                title="Magic Spider"
+                img={project5}
                 summary="A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
                         It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
                         local currency."
-                link="/"
-                type="Featured Project"
-                github="/"
+                link="https://lucky-naiad-ee9f95.netlify.app/"
+                type="Solo Project"
+                github="https://github.com/Weekendend/Face_Recognition_Brain"
               />
             </motion.div>
             <motion.div
@@ -289,14 +350,14 @@ const projects = () => {
               variants={rightVariant}
             >
               <Project
-                title="Crypto Screener Application"
-                img={project1}
+                title="Notes Website"
+                img={project6}
                 summary="A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
                         It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
                         local currency."
-                link="/"
+                link="https://steady-mandazi-1a4a9a.netlify.app/"
                 type="Featured Project"
-                github="/"
+                github="https://github.com/Weekendend/remix-To-Do-List"
               />
             </motion.div>
           </div>
