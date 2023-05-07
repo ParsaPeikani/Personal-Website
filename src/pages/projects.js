@@ -6,10 +6,10 @@ import Link from "next/link";
 import Image from "next/image";
 import { GithubIcon } from "@/components/Icons";
 import project1 from "../../public/images/projects/project1.jpg";
-import project2 from "../../public/images/projects/project2.png";
+import project2 from "../../public/images/projects/project2.jpg";
 import project3 from "../../public/images/projects/project3.png";
-import project4 from "../../public/images/projects/project4.png";
-import project5 from "../../public/images/projects/project5.jpg";
+import project4 from "../../public/images/projects/project4.jpg";
+import project5 from "../../public/images/projects/project5.png";
 import project6 from "../../public/images/projects/project6.png";
 import NavBar from "@/components/NavBar";
 
@@ -253,6 +253,58 @@ const projects = () => {
             className="mb-16 dark:text-yellow-400"
           />
           <div className="grid grid-cols-12 gap-24 gap-y-32">
+            <motion.div
+              className="col-span-12"
+              initial="offscreen"
+              whileInView="onscreen"
+              viewport={{ once: true, amount: 0.1 }}
+              variants={top2Variant}
+            >
+              <UpcomingProject
+                title="Messenger Clone"
+                img={project1}
+                summary="Built with Tailwind CSS, Next.js 13, Prisma, MongoDB, 
+                React, and Pusher, this messenger clone project lets users chat 
+                in real-time with friends and colleagues. Featuring a sleek and 
+                modern design, the app supports both one-on-one and group 
+                conversations, and users can easily send messages, images, and emojis. Prisma and MongoDB are used for efficient data management, while Pusher enables seamless real-time communication between users."
+                link="/"
+                type="Solo Project"
+                github="/"
+              />
+            </motion.div>
+            <motion.div
+              className="col-span-6"
+              initial="offscreen"
+              whileInView="onscreen"
+              viewport={{ once: true, amount: 0.2 }}
+              variants={leftVariant}
+            >
+              <Project
+                title="Magic Spider"
+                img={project2}
+                summary=""
+                link="https://lucky-naiad-ee9f95.netlify.app/"
+                type="Solo Project"
+                github="https://github.com/Weekendend/Face_Recognition_Brain"
+              />
+            </motion.div>
+            <motion.div
+              className="col-span-6"
+              initial="offscreen"
+              whileInView="onscreen"
+              viewport={{ once: true, amount: 0.2 }}
+              variants={rightVariant}
+            >
+              <Project
+                title="Notes Website"
+                img={project3}
+                summary=""
+                link="https://steady-mandazi-1a4a9a.netlify.app/"
+                type="Featured Project"
+                github="https://github.com/Weekendend/remix-To-Do-List"
+              />
+            </motion.div>
             <div className="col-span-12">
               <motion.div
                 initial="offscreen"
@@ -263,8 +315,14 @@ const projects = () => {
                 <div className="col-span-12">
                   <FeaturedProject
                     title="Sports Shop Online Website"
-                    img={project1}
-                    summary="A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your local currency."
+                    img={project4}
+                    summary="Built with HTML, Sass, JavaScript, 
+                React.js, and Firebase, this sportswear website 
+                features intuitive navigation, multiple product 
+                categories, and a secure checkout process. 
+                Utilizing Redux and Stripe API, the site delivers a 
+                seamless shopping experience with efficient data storage 
+                and secure online payments."
                     link="https://jade-valkyrie-9b0f5a.netlify.app"
                     type="Solo Project"
                     github="https://github.com/ParsaPeikani/E-commerce-Project"
@@ -281,10 +339,8 @@ const projects = () => {
             >
               <Project
                 title="2D SeaSavior Game"
-                img={project2}
-                summary="A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
-                It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
-                local currency."
+                img={project5}
+                summary=""
                 link="https://visionary-snickerdoodle-039f3a.netlify.app/"
                 type="Solo Project"
                 github="https://github.com/Weekendend/2D-Game-JavaScript"
@@ -299,65 +355,11 @@ const projects = () => {
             >
               <Project
                 title="Chess"
-                img={project3}
-                summary="A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
-                    It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
-                    local currency."
+                img={project6}
+                summary=""
                 link="https://www.youtube.com/watch?v=3HL7d-s5VCI"
                 type="Group Project"
                 github="https://github.com/shadizx/ChessPython"
-              />
-            </motion.div>
-            <motion.div
-              className="col-span-12"
-              initial="offscreen"
-              whileInView="onscreen"
-              viewport={{ once: true, amount: 0.2 }}
-              variants={top2Variant}
-            >
-              <UpcomingProject
-                title="Twitter Clone"
-                img={project4}
-                summary="A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your local currency."
-                link="/"
-                type="Solo Project"
-                github="https://github.com/ParsaPeikani/twitter_clone"
-              />
-            </motion.div>
-            <motion.div
-              className="col-span-6"
-              initial="offscreen"
-              whileInView="onscreen"
-              viewport={{ once: true, amount: 0.2 }}
-              variants={leftVariant}
-            >
-              <Project
-                title="Magic Spider"
-                img={project5}
-                summary="A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
-                        It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
-                        local currency."
-                link="https://lucky-naiad-ee9f95.netlify.app/"
-                type="Solo Project"
-                github="https://github.com/Weekendend/Face_Recognition_Brain"
-              />
-            </motion.div>
-            <motion.div
-              className="col-span-6"
-              initial="offscreen"
-              whileInView="onscreen"
-              viewport={{ once: true, amount: 0.2 }}
-              variants={rightVariant}
-            >
-              <Project
-                title="Notes Website"
-                img={project6}
-                summary="A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
-                        It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
-                        local currency."
-                link="https://steady-mandazi-1a4a9a.netlify.app/"
-                type="Featured Project"
-                github="https://github.com/Weekendend/remix-To-Do-List"
               />
             </motion.div>
           </div>
