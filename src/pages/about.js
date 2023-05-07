@@ -66,12 +66,12 @@ const about = () => {
                   duration: 2,
                 }}
               >
-                Hi, I'm Parsa Peikani, a web developer and backend designer with
-                a passion for creating beautiful, functional, and user-centered
-                digital experiences. With 1 years of experience in Linux with
-                panada Hausi. I am always looking for new and innovative ways to
-                bring my clients' visions to life becuase it is "VERY
-                IMPORTANT!!".
+                Hello, I'm Parsa Peikani, a self-taught web developer and
+                experienced backend designer who is currently in their second
+                year of studying computer science at the University of Victoria.
+                I am passionate about creating beautiful, functional, and
+                user-centered digital experiences, and have been self-learning
+                web development and React for over a year now.
               </motion.p>
               <motion.p
                 className="my-4 font-medium"
@@ -81,9 +81,10 @@ const about = () => {
                   duration: 2,
                 }}
               >
-                I am grinding leetcode by solving 10-20 medium to hard questions
-                everyday. I know I can push my limits by solving even more
-                questions.
+                I am currently focused on building a full-stack project, a
+                messenger clone, that showcases my skills and expertise in
+                creating high-performance, reliable, and secure web
+                applications.
               </motion.p>
               <motion.p
                 className="font-medium"
@@ -93,10 +94,10 @@ const about = () => {
                   duration: 2,
                 }}
               >
-                Currently I am busy working on a million dollar project where
-                you can submit a page and I'll give you the texts in the
-                submitted image. So if you are looking forward to hire me, ...
-                Nah, I'm good!!
+                Please take a look at my website to see some of my previous
+                projects, and don't hesitate to get in touch if you have any
+                questions or opportunities you'd like to discuss. I'm always
+                excited to collaborate on new projects and expand my skillset.
               </motion.p>
             </div>
             <div className="col-span-3 relative h-max rounded-2xl border-2 border-solid border-dark bg-light p-8 dark:bg-dark dark:border-yellow-400">
@@ -122,7 +123,7 @@ const about = () => {
             <div className="col-span-2 flex flex-col items-end justify-between">
               <div className="flex flex-col items-end justify-center">
                 <span className="inline-block text-7xl font-bold hover:animate-rubberBand cursor-pointer hover:text-purple-400">
-                  <AnimatedNumbers value={50} />+
+                  <AnimatedNumbers value={5} />+
                 </span>
                 <motion.h2
                   className="text-xl font-medium capitalize text-dark/75  dark:text-yellow-400/75"
@@ -130,7 +131,7 @@ const about = () => {
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ duration: 2 }}
                 >
-                  satisfied clients
+                  Languages Known
                 </motion.h2>
               </div>
 
@@ -150,10 +151,10 @@ const about = () => {
 
               <div className="flex flex-col items-end justify-center">
                 <span className="inline-block text-7xl font-bold hover:animate-rubberBand hover:text-purple-400 cursor-pointer">
-                  <AnimatedNumbers value={4} />+
+                  <AnimatedNumbers value={2} />+
                 </span>
                 <h2 className="text-xl font-medium capitalize text-dark/75 dark:text-yellow-400/75">
-                  years of experience
+                  years of CS experience
                 </h2>
               </div>
             </div>
