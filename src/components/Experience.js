@@ -45,7 +45,7 @@ const Experience = () => {
     <div className="my-64">
       <AnimatedText
         text="Experience"
-        className="text-yellow-400 text-center text-8xl font-bold pb-36"
+        className="text-dark dark:text-yellow-400 text-center text-8xl font-bold pb-36"
       />
       <div ref={ref} className="w-[75%] mx-auto relative">
         <motion.div

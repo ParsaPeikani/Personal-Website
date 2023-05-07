@@ -20,7 +20,7 @@ const Skills = () => {
     <>
       <AnimatedText
         text="Skills"
-        className="text-yellow-400 text-center text-8xl font-bold pt-40"
+        className="text-dark dark:text-yellow-400 text-center text-8xl font-bold pt-40"
       />
       <div className="w-full h-screen relative flex items-center justify-center rounded-full bg-circularLight dark:bg-circularDark">
         <motion.div

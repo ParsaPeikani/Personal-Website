@@ -70,7 +70,7 @@ const Contact = () => {
       </h1>
       <AnimatedText
         text="Contact."
-        className="text-yellow-400 text-center text-8xl font-bold"
+        className="text-dark dark:text-yellow-400 text-center text-8xl font-bold"
       />
       <div className="flex">
         <motion.div
@@ -86,7 +86,9 @@ const Contact = () => {
             className="mt-12 flex flex-col gap-8"
           >
             <label className=" pl-20 flex flex-col">
-              <span className="text-yellow-400 font-bold mb-4">Your Name</span>
+              <span className="text-dark dark:text-yellow-400 font-bold mb-4">
+                Your Name
+              </span>
               <input
                 type="text"
                 name="name"
@@ -97,7 +99,9 @@ const Contact = () => {
               />
             </label>
             <label className="pl-20 flex flex-col">
-              <span className="text-yellow-400 font-bold mb-4">Your email</span>
+              <span className="text-dark dark:text-yellow-400 font-bold mb-4">
+                Your email
+              </span>
               <input
                 type="email"
                 name="email"
@@ -108,7 +112,7 @@ const Contact = () => {
               />
             </label>
             <label className="pl-20 flex flex-col">
-              <span className="text-yellow-400 font-bold mb-4">
+              <span className="text-dark dark:text-yellow-400 font-bold mb-4">
                 Your Message
               </span>
               <textarea

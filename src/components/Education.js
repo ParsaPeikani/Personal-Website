@@ -36,7 +36,7 @@ const Education = () => {
     <div className="my-64">
       <AnimatedText
         text="Education"
-        className="text-yellow-400 text-center text-8xl font-bold pb-32"
+        className="text-dark dark:text-yellow-400 text-center text-8xl font-bold pb-32"
       />
       <div ref={ref} className="w-[75%] mx-auto relative">
         <motion.div
