@@ -19,8 +19,7 @@ export default function App({ Component, pageProps }) {
       <main
         className={`${montserrat.variable} font-mont w-full min-h-screen bg-light dark:bg-dark`}
       >
-        {/* <NavBar /> */}
-        <Component {...pageProps} />;
+        <Component {...pageProps} />
       </main>
     </div>
   );

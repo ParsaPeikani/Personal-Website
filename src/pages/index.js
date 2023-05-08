@@ -44,7 +44,7 @@ export default function Home() {
           </AnimatePresence>
         ) : (
           <>
-            <Layout className="pt-4">
+            <Layout className="pt-4 overflow-y-hidden">
               <div className="flex items-center justify-between w-full">
                 <motion.div
                   className="w-1/3 md:w-2/5 animate-wiggle"
@@ -60,14 +60,13 @@ export default function Home() {
                     },
                   }}
                 >
-                  <div className="flex pt-14">
+                  <div className="flex pt-14 overflow-y-hidden">
                     <Image
                       src={profilePic}
                       alt="CodeBucks"
                       priority={true}
-                      sizes="(max-width: 768px) 100vw,
-                    (max-width: 1200px) 50vw,
-                    50vw"
+                      className="max-w-full"
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
                     />
                   </div>
                 </motion.div>
