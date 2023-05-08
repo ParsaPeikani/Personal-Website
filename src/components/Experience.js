@@ -56,7 +56,7 @@ const Experience = () => {
           <Details
             position="Customer Service"
             company="Pizza Hut"
-            companyLink="www.google.com"
+            companyLink="https://www.pizzahut.ca/"
             time="2022-Present"
             address="Victoria, CA"
             work="Developed strong multitasking skills by working effectively with team members to complete tasks and achieve goals, which led
@@ -66,7 +66,7 @@ const Experience = () => {
           <Details
             position="Cashier"
             company="Tim Horton"
-            companyLink="www.google.com"
+            companyLink="https://www.timhortons.ca/?gclid=Cj0KCQjwmN2iBhCrARIsAG_G2i4zDk6G0bmvIAXJT1hN1KhrC9NHGsjcqfkhTY8xRbmwv-ad_gnQ5jAaAtOSEALw_wcB"
             time="2021-2022"
             address="Victoria, CA"
             work="Demonstrated strong skills in managing multiple responsibilities simultaneously, including preparing orders and handling customer
