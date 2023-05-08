@@ -31,7 +31,7 @@ const singleWord = {
 const AnimatedText = ({ text, className = "" }) => {
   const [mode, setMode] = useThemeSwitcher();
   return (
-    <div className="w-full mx-auto py-2 flex items-center justify-center text-center ">
+    <div className="w-full mx-auto py-2 flex items-center justify-center text-center over-flow-hidden sm:py-0">
       <motion.h1
         className={`inline-block w-full font-bold capitalize text-8xl ${className}`}
         variants={quote}

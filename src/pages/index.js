@@ -44,8 +44,8 @@ export default function Home() {
           </AnimatePresence>
         ) : (
           <>
-            <Layout className="pt-4 overflow-y-hidden">
-              <div className="flex items-center justify-between w-full">
+            <Layout className="pt-4 overflow-y-hidden md:pt-16 sm:pt-8">
+              <div className="flex items-center justify-between w-full lg:flex-col">
                 <motion.div
                   className="w-1/3 md:w-2/5 animate-wiggle"
                   initial={{ opacity: 0, y: -50, scale: 0.8 }}
@@ -60,27 +60,27 @@ export default function Home() {
                     },
                   }}
                 >
-                  <div className="flex pt-14 overflow-y-hidden">
+                  <div className="flex pt-14 overflow-y-hidden md:w-full">
                     <Image
                       src={profilePic}
                       alt="CodeBucks"
                       priority={true}
-                      className="max-w-full"
+                      className="max-w-full lg:hidden md:inline-block md:w-full"
                       sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
                     />
                   </div>
                 </motion.div>
-                <div className="w-1/2 flex flex-col items-center self-center pt-14">
+                <div className="w-1/2 flex flex-col items-center self-center pt-14 lg:w-full lg:text-center">
                   <AnimatedText
                     text="Hi there,"
-                    className="!text-5xl !text-left"
+                    className="!text-5xl !text-left xl:!text-5xl lg:!text-center lg:!text-6xl md:!text-5xl sm:!text-3xl"
                   />
                   <AnimatedText
                     text="I'm Parsa Peikani, a self-made software engineer :)"
-                    className="!text-5xl !text-left"
+                    className="!text-5xl !text-left xl:!text-5xl lg:!text-center lg:!text-6xl md:!text-5xl sm:!text-3xl"
                   />
                   <motion.p
-                    className="my-4 text-base font-medium text-justify"
+                    className="my-4 text-base font-medium text-justify md:text-sm sm:text-xs"
                     initial={{ opacity: 0, y: -20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1, ease: "easeInOut" }}
@@ -91,7 +91,7 @@ export default function Home() {
                     invite you to explore my portfolio and projects, where you
                     can witness my expertise in React.js and web development.
                   </motion.p>
-                  <div className="flex items-center self-start mt-2">
+                  <div className="flex items-center self-start mt-2 lg:self-center">
                     <motion.a
                       initial={{ opacity: 0, x: -80 }}
                       animate={{ opacity: 1, x: 0 }}
@@ -102,7 +102,11 @@ export default function Home() {
                       }}
                       href="/resume.pdf"
                       target={"_blank"}
-                      className="flex items-center bg-dark dark:bg-yellow-400 text-light dark:text-dark p-2.5 px-6 rounded-lg font-semibold hover:bg-light hover:text-dark border-2 border-solid border-transparent hover:border-dark hover:dark:bg-dark hover:dark:border-yellow-400 hover:dark:text-yellow-400"
+                      className="flex items-center bg-dark dark:bg-yellow-400 text-light
+                      dark:text-dark p-2.5 px-6 rounded-lg font-semibold hover:bg-light
+                      hover:text-dark border-2 border-solid border-transparent hover:border-dark
+                      hover:dark:bg-dark hover:dark:border-yellow-400 hover:dark:text-yellow-400
+                       md:p-2 md:px-4 md:text-base "
                       download={true}
                     >
                       Resume <LinkArrow className={"w-6 ml-1"} />
@@ -117,7 +121,8 @@ export default function Home() {
                       }}
                       href="mailto:parsapeikani05@gmail.com"
                       target={"_blank"}
-                      className="ml-4 text-lg font-medium capitalize text-dark underline dark:text-yellow-400"
+                      className="ml-4 text-lg font-medium capitalize text-dark underline
+                       dark:text-yellow-400 md:text-base "
                     >
                       Contact
                     </motion.a>
