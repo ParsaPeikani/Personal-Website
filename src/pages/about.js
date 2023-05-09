@@ -69,7 +69,7 @@ const about = () => {
                   duration: 2,
                 }}
               >
-                Hello, I'm Parsa Peikani, a self-taught web developer and
+                Hello, I&apos;m Parsa Peikani, a self-taught web developer and
                 experienced backend designer who is currently in their second
                 year of studying computer science at the University of Victoria.
                 I am passionate about creating beautiful, functional, and
@@ -98,9 +98,10 @@ const about = () => {
                 }}
               >
                 Please take a look at my website to see some of my previous
-                projects, and don't hesitate to get in touch if you have any
-                questions or opportunities you'd like to discuss. I'm always
-                excited to collaborate on new projects and expand my skillset.
+                projects, and don&apos;t hesitate to get in touch if you have
+                any questions or opportunities you&apos;d like to discuss.
+                I&apos;m always excited to collaborate on new projects and
+                expand my skillset.
               </motion.p>
             </div>
             <div className="col-span-3 relative h-max rounded-2xl border-2 border-solid border-dark bg-light p-8 dark:bg-dark dark:border-yellow-400 xl:col-span-4 md:order-1 md:col-span-8">
