@@ -47,7 +47,7 @@ export default function Home() {
             <Layout className="pt-4 overflow-y-hidden md:pt-16 sm:pt-8">
               <div className="flex items-center justify-between w-full lg:flex-col">
                 <motion.div
-                  className="w-1/3 md:w-2/5 animate-wiggle"
+                  className="w-1/2  md:w-3/5 flex items-center justify-center animate-wiggle -ml-16"
                   initial={{ opacity: 0, y: -50, scale: 0.8 }}
                   animate={{
                     opacity: 1,
@@ -60,16 +60,15 @@ export default function Home() {
                     },
                   }}
                 >
-                  <div className="flex pt-14 overflow-y-hidden md:w-full">
-                    <Image
-                      src={profilePic}
-                      alt="CodeBucks"
-                      priority={true}
-                      className="max-w-full lg:hidden md:inline-block md:w-full"
-                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
-                    />
-                  </div>
+                  <Image
+                    src={profilePic}
+                    alt="CodeBucks"
+                    priority={true}
+                    className="w-full md:w-3/4"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
+                  />
                 </motion.div>
+
                 <div className="w-1/2 flex flex-col items-center self-center pt-14 lg:w-full lg:text-center">
                   <AnimatedText
                     text="Hi there,"
