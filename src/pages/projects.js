@@ -6,7 +6,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { GithubIcon } from "@/components/Icons";
 import project1 from "../../public/images/projects/project1.jpg";
-import project2 from "../../public/images/projects/project2.jpg";
+import project2 from "../../public/images/projects/project7.jpg";
 import project3 from "../../public/images/projects/project3.png";
 import project4 from "../../public/images/projects/project4.jpg";
 import project5 from "../../public/images/projects/project5.png";
