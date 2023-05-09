@@ -75,7 +75,7 @@ const UpcomingProject = ({ type, title, summary, img, link, github }) => {
     </motion.article>
   );
 };
-
+// Featured Project
 const FeaturedProject = ({ type, title, summary, img, link, github }) => {
   return (
     <motion.article
