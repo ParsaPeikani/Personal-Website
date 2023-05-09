@@ -15,12 +15,19 @@ import NavBar from "@/components/NavBar";
 
 const UpcomingProject = ({ type, title, summary, img, link, github }) => {
   return (
-    <motion.article className="w-full rounded-br-2xl relative flex items-center justify-between rounded-3xl border border-solid border-dark bg-light shadow-2xl p-12 dark:bg-dark dark:border-yellow-400">
-      <div className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2.5rem] bg-dark rounded-br-3xl dark:bg-yellow-400" />
+    <motion.article
+      className="w-full rounded-br-2xl relative flex items-center justify-between 
+    rounded-3xl border border-solid border-dark bg-light shadow-2xl p-12 dark:bg-dark
+     dark:border-yellow-400 lg:flex-col lg:p-8 xs:rounded-2xl xs:rounded-br-3xl xs:p-4"
+    >
+      <div
+        className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2.5rem] bg-dark rounded-br-3xl
+       dark:bg-yellow-400 xs:-right-2 sm:h-[102%] xs:w-full xs:rounded-[1.5rem]"
+      />
       <Link
         href={link}
         target="_blank"
-        className="w-1/2 cursor-pointer overflow-hidden rounded-lg"
+        className="w-1/2 cursor-pointer overflow-hidden rounded-lg lg:w-full"
       >
         <Image
           src={img}
@@ -32,8 +39,8 @@ const UpcomingProject = ({ type, title, summary, img, link, github }) => {
         50vw"
         />
       </Link>
-      <div className="w-1/2 flex flex-col items-start justify-between pl-6 pt-0">
-        <span className="text-primary font-medium text-xl dark:text-yellow-400">
+      <div className="w-1/2 flex flex-col items-start justify-between pl-6 pt-0 lg:w-full lg:pl-0 lg:pt-6">
+        <span className="text-primary font-medium text-xl dark:text-yellow-400 xs:text-base">
           {type}
         </span>
         <Link
@@ -41,11 +48,11 @@ const UpcomingProject = ({ type, title, summary, img, link, github }) => {
           target="_blank"
           className="hover:underline underline-offset-2"
         >
-          <h2 className="my-2 w-full text-left text-4xl font-bold dark:text-yellow-400">
+          <h2 className="my-2 w-full text-left text-4xl font-bold dark:text-yellow-400 sm:text-sm">
             {title}
           </h2>
         </Link>
-        <p className="my-2 font-medium text-dark dark:text-yellow-400">
+        <p className="my-2 font-medium text-dark dark:text-yellow-400 sm:text-sm">
           {summary}
         </p>
         <div className="mt-2 flex items-center">
@@ -59,7 +66,7 @@ const UpcomingProject = ({ type, title, summary, img, link, github }) => {
           <Link
             href={link}
             target="_blank"
-            className="ml-4 rounded-lg bg-dark text-light p-2 px-6 text-lg font-semibold hover:animate-pulse dark:bg-yellow-400 dark:text-dark"
+            className="ml-4 rounded-lg bg-dark text-light p-2 px-6 text-lg font-semibold hover:animate-pulse dark:bg-yellow-400 dark:text-dark sm:px-4 sm:text-base"
           >
             Coming soon :)
           </Link>
@@ -71,12 +78,19 @@ const UpcomingProject = ({ type, title, summary, img, link, github }) => {
 
 const FeaturedProject = ({ type, title, summary, img, link, github }) => {
   return (
-    <motion.article className="w-full rounded-br-2xl relative flex items-center justify-between rounded-3xl border border-solid border-dark bg-light shadow-2xl p-12 dark:bg-dark dark:border-yellow-400">
-      <div className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2.5rem] bg-dark rounded-br-3xl dark:bg-yellow-400" />
+    <motion.article
+      className="w-full rounded-br-2xl relative flex items-center 
+    justify-between rounded-3xl border border-solid border-dark bg-light
+     shadow-2xl p-12 dark:bg-dark dark:border-yellow-400 lg:flex-col lg:p-8 xs:rounded-2xl xs:rounded-br-3xl xs:p-4"
+    >
+      <div
+        className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2.5rem]
+       bg-dark rounded-br-3xl dark:bg-yellow-400 xs:-right-2 sm:h-[102%] xs:w-full xs:rounded-[1.5rem]"
+      />
       <Link
         href={link}
         target="_blank"
-        className="w-1/2 cursor-pointer overflow-hidden rounded-lg"
+        className="w-1/2 cursor-pointer overflow-hidden rounded-lg lg:w-full"
       >
         <Image
           src={img}
@@ -88,8 +102,8 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
         50vw"
         />
       </Link>
-      <div className="w-1/2 flex flex-col items-start justify-between pl-6 pt-0">
-        <span className="text-primary font-medium text-xl dark:text-yellow-400">
+      <div className="w-1/2 flex flex-col items-start justify-between pl-6 pt-0 lg:w-full lg:pl-0 lg:pt-6">
+        <span className="text-primary font-medium text-xl dark:text-yellow-400 xs:text-base">
           {type}
         </span>
         <Link
@@ -97,11 +111,11 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
           target="_blank"
           className="hover:underline underline-offset-2"
         >
-          <h2 className="my-2 w-full text-left text-4xl font-bold dark:text-yellow-400">
+          <h2 className="my-2 w-full text-left text-4xl font-bold dark:text-yellow-400 sm:text-sm">
             {title}
           </h2>
         </Link>
-        <p className="my-2 font-medium text-dark dark:text-yellow-400">
+        <p className="my-2 font-medium text-dark dark:text-yellow-400 sm:text-sm">
           {summary}
         </p>
         <div className="mt-2 flex items-center">
@@ -115,7 +129,9 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
           <Link
             href={link}
             target="_blank"
-            className="ml-4 rounded-lg bg-dark text-light p-2 px-6 text-lg font-semibold hover:animate-pulse dark:bg-yellow-400 dark:text-dark"
+            className="ml-4 rounded-lg bg-dark text-light p-2 px-6 text-lg 
+            font-semibold hover:animate-pulse dark:bg-yellow-400 dark:text-dark
+            sm:px-4 sm:text-base"
           >
             Visit Project
           </Link>
@@ -127,8 +143,14 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
 
 const Project = ({ title, type, img, link, github }) => {
   return (
-    <article className="w-full flex flex-col items-center justify-center rounded-2xl border border-solid border-dark bg-light p-6 relative dark:bg-dark dark:border-yellow-400">
-      <div className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2rem] bg-dark rounded-br-3xl dark:bg-yellow-400" />
+    <article
+      className="w-full flex flex-col items-center justify-center rounded-2xl border border-solid
+     border-dark bg-light p-6 relative dark:bg-dark dark:border-yellow-400 xs:p-4"
+    >
+      <div
+        className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2rem]
+       bg-dark rounded-br-3xl dark:bg-yellow-400 md:-right-2 md:w-[101%] xs:h-[102%] xs:rounded-[1.5rem]"
+      />
       <Link
         href={link}
         target="_blank"
@@ -137,7 +159,10 @@ const Project = ({ title, type, img, link, github }) => {
         <Image src={img} alt={title} className="w-full h-auto" />
       </Link>
       <div className="w-full flex flex-col items-start justify-between mt-4">
-        <span className="text-primary font-medium text-xl dark:text-yellow-400">
+        <span
+          className="text-primary font-medium text-xl dark:text-yellow-400
+        lg:text-lg md:text-base"
+        >
           {type}
         </span>
         <Link
@@ -145,20 +170,22 @@ const Project = ({ title, type, img, link, github }) => {
           target="_blank"
           className="hover:underline underline-offset-2"
         >
-          <h2 className="my-2 w-full text-left text-3xl font-bold">{title}</h2>
+          <h2 className="my-2 w-full text-left text-3xl font-bold lg:text-2xl">
+            {title}
+          </h2>
         </Link>
         <div className="w-full mt-2 flex items-center justify-between">
           <Link
             href={link}
             target="_blank"
-            className="text-lg font-semibold underline"
+            className="text-lg font-semibold underline md:text-base"
           >
             Visit
           </Link>
           <motion.div
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
-            className="w-10"
+            className="w-10 md:w-6"
           >
             <Link href={github} target="_blank">
               <GithubIcon />
@@ -246,13 +273,13 @@ const projects = () => {
         <meta name="description" content="any description" />
       </Head>
       <NavBar />
-      <main className="w-full mb-16 flex flex-col items-center justify-center dark:text-yellow-400">
+      <main className="w-full flex flex-col items-center justify-center dark:text-yellow-400">
         <Layout className="pt-16">
           <AnimatedText
             text="Imagination Trumps Knowledge!"
-            className="mb-16 dark:text-yellow-400"
+            className="mb-16 dark:text-yellow-400 lg:!text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl"
           />
-          <div className="grid grid-cols-12 gap-24 gap-y-32">
+          <div className="grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0">
             <motion.div
               className="col-span-12"
               initial="offscreen"
@@ -274,7 +301,7 @@ const projects = () => {
               />
             </motion.div>
             <motion.div
-              className="col-span-6"
+              className="col-span-6 sm:col-span-12"
               initial="offscreen"
               whileInView="onscreen"
               viewport={{ once: true, amount: 0.2 }}
@@ -290,7 +317,7 @@ const projects = () => {
               />
             </motion.div>
             <motion.div
-              className="col-span-6"
+              className="col-span-6 sm:col-span-12"
               initial="offscreen"
               whileInView="onscreen"
               viewport={{ once: true, amount: 0.2 }}
@@ -331,7 +358,7 @@ const projects = () => {
               </motion.div>
             </div>
             <motion.div
-              className="col-span-6"
+              className="col-span-6 sm:col-span-12"
               initial="offscreen"
               whileInView="onscreen"
               viewport={{ once: true, amount: 0.2 }}
@@ -347,7 +374,7 @@ const projects = () => {
               />
             </motion.div>
             <motion.div
-              className="col-span-6"
+              className="col-span-6 sm:col-span-12"
               initial="offscreen"
               whileInView="onscreen"
               viewport={{ once: true, amount: 0.2 }}

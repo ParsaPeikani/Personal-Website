@@ -6,7 +6,7 @@ const HireMe = () => {
   return (
     <motion.div
       className="fixed right-4 bottom-4 flex items-center justify-center overflow-hidden
-      md:right-8 md:left-auto md:top-0 md:bottom-auto md:absolute"
+      md:right-8 md:left-auto md:top-0 md:bottom-auto md:absolute sm:right-0"
       initial={{ opacity: 0, rotate: 360 }}
       animate={{ opacity: 1, rotate: 0 }}
       transition={{ duration: 2, ease: "easeInOut" }}
