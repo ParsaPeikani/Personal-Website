@@ -134,7 +134,7 @@ const Contact = () => {
           </form>
         </motion.div>
         <motion.div
-          className="xl:flex-1 xl:h-auto md:h-[550px] h-[550px] w-1/2 cursor-pointer"
+          className="-mt-20 flex-grow xl:flex-1 pt-40 md:h-[450px] sm:h-[350px] xl:h-[600px]  w-1/3 max-w-[50%] cursor-pointer"
           initial={{ opacity: 0, x: 300 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 1.5, ease: "easeInOut" }}
