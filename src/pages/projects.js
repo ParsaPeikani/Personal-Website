@@ -5,7 +5,7 @@ import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
 import { GithubIcon } from "@/components/Icons";
-import project1 from "../../public/images/projects/project1.jpg";
+import project1 from "../../public/images/projects/project1.png";
 import project2 from "../../public/images/projects/project7.jpg";
 import project3 from "../../public/images/projects/project3.png";
 import project4 from "../../public/images/projects/project4.jpg";
@@ -68,7 +68,7 @@ const UpcomingProject = ({ type, title, summary, img, link, github }) => {
             target="_blank"
             className="ml-4 rounded-lg bg-dark text-light p-2 px-6 text-lg font-semibold hover:animate-pulse dark:bg-yellow-400 dark:text-dark sm:px-4 sm:text-base"
           >
-            Coming soon :)
+            View Live
           </Link>
         </div>
       </div>
@@ -288,16 +288,12 @@ const projects = () => {
               variants={top2Variant}
             >
               <UpcomingProject
-                title="Messenger Clone"
+                title="AI-Verse"
                 img={project1}
-                summary="Built with Tailwind CSS, Next.js 13, Prisma, MongoDB, 
-                React, and Pusher, this messenger clone project lets users chat 
-                in real-time with friends and colleagues. Featuring a sleek and 
-                modern design, the app supports both one-on-one and group 
-                conversations, and users can easily send messages, images, and emojis. Prisma and MongoDB are used for efficient data management, while Pusher enables seamless real-time communication between users."
-                link="/"
+                summary="Created and launched an innovative and versatile full-stack Software-as-a-Service (SaaS) platform featuring five cutting-edge AI tools: image, video, music, and code generation utilizing ChatGPT and Replicate AI. Designed with a seamless user experience, the platform offers both a free tier and a premium monthly subscription option, streamlined through Stripe for secure payments. Employed Clerk for authentication and Prisma for data management, while crafting the app with the latest Next.js 13 and React technologies. Additionally, integrated Crisp for responsive customer support."
+                link="https://ai-verse-liard.vercel.app/"
                 type="Solo Project"
-                github="/"
+                github="https://github.com/ParsaPeikani/AI-saas"
               />
             </motion.div>
             <motion.div
