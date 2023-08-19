@@ -68,7 +68,7 @@ const UpcomingProject = ({ type, title, summary, img, link, github }) => {
             target="_blank"
             className="ml-4 rounded-lg bg-dark text-light p-2 px-6 text-lg font-semibold hover:animate-pulse dark:bg-yellow-400 dark:text-dark sm:px-4 sm:text-base"
           >
-            View Live
+            Coming Soon :)
           </Link>
         </div>
       </div>
@@ -285,9 +285,25 @@ const projects = () => {
               initial="offscreen"
               whileInView="onscreen"
               viewport={{ once: true, amount: 0.1 }}
-              variants={top2Variant}
+              variants={top1Variant}
             >
               <UpcomingProject
+                title="BudgetGraph Pro"
+                img={project2}
+                summary=""
+                link="/"
+                type="Solo Project"
+                github="/"
+              />
+            </motion.div>
+            <motion.div
+              className="col-span-12"
+              initial="offscreen"
+              whileInView="onscreen"
+              viewport={{ once: true, amount: 0.1 }}
+              variants={top2Variant}
+            >
+              <FeaturedProject
                 title="AI-Verse"
                 img={project1}
                 summary="Created and launched an innovative and versatile full-stack Software-as-a-Service (SaaS) platform featuring five cutting-edge AI tools: image, video, music, and code generation utilizing ChatGPT and Replicate AI. Designed with a seamless user experience, the platform offers both a free tier and a premium monthly subscription option, streamlined through Stripe for secure payments. Employed Clerk for authentication and Prisma for data management, while crafting the app with the latest Next.js 13 and React technologies. Additionally, integrated Crisp for responsive customer support."
@@ -297,32 +313,22 @@ const projects = () => {
               />
             </motion.div>
             <motion.div
-              className="col-span-6 sm:col-span-12"
+              className="col-span-12"
               initial="offscreen"
               whileInView="onscreen"
-              viewport={{ once: true, amount: 0.2 }}
-              variants={leftVariant}
+              viewport={{ once: true, amount: 0.1 }}
+              variants={top1Variant}
             >
-              <Project
-                title="Magic Spider"
-                img={project2}
-                summary=""
-                link="https://lucky-naiad-ee9f95.netlify.app/"
-                type="Solo Project"
-                github="https://github.com/Weekendend/Face_Recognition_Brain"
-              />
-            </motion.div>
-            <motion.div
-              className="col-span-6 sm:col-span-12"
-              initial="offscreen"
-              whileInView="onscreen"
-              viewport={{ once: true, amount: 0.2 }}
-              variants={rightVariant}
-            >
-              <Project
+              <FeaturedProject
                 title="Notes Website"
                 img={project3}
-                summary=""
+                summary="Designed and launched a dynamic To-Do list web application, 
+                skillfully employing front-end technologies like HTML, CSS, and JavaScript, 
+                along with React.js and Remix for an interactive user interface. The app allows 
+                seamless task management with due dates. Robust security measures were integrated 
+                for user data confidentiality. Back-end technologies MongoDB and Prisma enabled 
+                effortless note creation, editing, and deletion. Demonstrates adeptness in full-stack 
+                web development, blending diverse technologies for a user-centric solution."
                 link="https://steady-mandazi-1a4a9a.netlify.app/"
                 type="Featured Project"
                 github="https://github.com/Weekendend/remix-To-Do-List"
@@ -333,7 +339,7 @@ const projects = () => {
                 initial="offscreen"
                 whileInView="onscreen"
                 viewport={{ once: true, amount: 0.1 }}
-                variants={top1Variant}
+                variants={top2Variant}
               >
                 <div className="col-span-12">
                   <FeaturedProject
