@@ -52,7 +52,7 @@ const about = () => {
           <div className="grid w-full grid-cols-8 gap-16 sm:gap-8">
             <div className="col-span-3 flex flex-col items-start justify-start xl:col-span-4 md:order-2 md:col-span-8">
               <motion.h2
-                className="mb-4 text-lg font-bold uppercase text-dark/75 dark:text-yellow-400/75"
+                className="mb-4 text-xl font-bold uppercase text-dark/75 dark:text-yellow-400/75"
                 initial={{ opacity: 0, scale: 0 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{
@@ -62,46 +62,48 @@ const about = () => {
                 Biography
               </motion.h2>
               <motion.p
-                className="font-medium"
+                className="font-medium text-lg"
                 initial={{ opacity: 0, x: -80 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{
                   duration: 2,
                 }}
               >
-                Hello, I&apos;m Parsa Peikani, a self-taught web developer and
-                experienced backend designer who is currently in their second
-                year of studying computer science at the University of Victoria.
-                I am passionate about creating beautiful, functional, and
-                user-centered digital experiences, and have been self-learning
-                web development and React for over a year now.
+                Hello, I&apos;m Parsa Peikani, a self-taught full-stack
+                developer and software engineer currently in my third year of
+                studying computer science at the University of Victoria. With
+                over two years of self-learning experience, I&apos;m passionate
+                about creating beautiful, functional, and user-centered digital
+                experiences.
               </motion.p>
               <motion.p
-                className="my-4 font-medium"
+                className="my-4 font-medium text-lg"
                 initial={{ opacity: 0, x: -80 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{
                   duration: 2,
                 }}
               >
-                I am currently focused on building a full-stack project, a
-                messenger clone, that showcases my skills and expertise in
-                creating high-performance, reliable, and secure web
-                applications.
+                I&apos;m currently working on a project using C#, Azure, and
+                ASP.NET, technologies that I&apos;ll also be utilizing during my
+                upcoming Software Developer internship at Schneider Electric
+                from September to December 2024. This project not only
+                demonstrates my ability to develop high-performance, reliable,
+                and secure web applications but also reflects my keen interest
+                in gaining experience with new and emerging technologies.
               </motion.p>
               <motion.p
-                className="font-medium"
+                className="font-medium text-lg"
                 initial={{ opacity: 0, x: -80 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{
                   duration: 2,
                 }}
               >
-                Please take a look at my website to see some of my previous
-                projects, and don&apos;t hesitate to get in touch if you have
-                any questions or opportunities you&apos;d like to discuss.
-                I&apos;m always excited to collaborate on new projects and
-                expand my skillset.
+                Please explore my website to view my previous projects, and feel
+                free to reach out if you have any questions or opportunities.
+                I&apos;m always eager to collaborate on new projects and
+                continue expanding my skillset.
               </motion.p>
             </div>
             <div className="col-span-3 relative h-max rounded-2xl border-2 border-solid border-dark bg-light p-8 dark:bg-dark dark:border-yellow-400 xl:col-span-4 md:order-1 md:col-span-8">
@@ -127,7 +129,7 @@ const about = () => {
             <div className="col-span-2 flex flex-col items-end justify-between xl:col-span-8 xl:flex-row xl:items-center md:order-3">
               <div className="flex flex-col items-end justify-center xl:items-center">
                 <span className="inline-block text-7xl font-bold hover:animate-rubberBand cursor-pointer hover:text-purple-400 md:text-6xl sm:text-5xl xs:text-4xl">
-                  <AnimatedNumbers value={5} />+
+                  <AnimatedNumbers value={10} />+
                 </span>
                 <motion.h2
                   className="text-xl font-medium capitalize text-dark/75  dark:text-yellow-400/75
@@ -142,7 +144,7 @@ const about = () => {
 
               <div className="flex flex-col items-end justify-center xl:items-center">
                 <span className="inline-block text-7xl font-bold hover:animate-rubberBand hover:text-purple-400 cursor-pointer md:text-6xl sm:text-5xl xs:text-4xl">
-                  <AnimatedNumbers value={10} />+
+                  <AnimatedNumbers value={15} />+
                 </span>
                 <motion.h2
                   className="text-xl font-medium capitalize text-dark/75 dark:text-yellow-400/75
@@ -157,7 +159,7 @@ const about = () => {
 
               <div className="flex flex-col items-end justify-center xl:items-center">
                 <span className="inline-block text-7xl font-bold hover:animate-rubberBand hover:text-purple-400 cursor-pointer md:text-6xl sm:text-5xl xs:text-4xl">
-                  <AnimatedNumbers value={2} />+
+                  <AnimatedNumbers value={3} />+
                 </span>
                 <h2
                   className="text-xl font-medium capitalize text-dark/75 dark:text-yellow-400/75

@@ -69,14 +69,18 @@ export default function Home() {
                   />
                 </motion.div>
 
-                <div className="w-1/2 flex flex-col items-center self-center pt-14 lg:w-full lg:text-center">
+                <div className="w-1/2 flex flex-col items-center self-center pt-14 lg:w-full lg:text-center ">
                   <AnimatedText
                     text="Hi there,"
                     className="!text-5xl !text-left xl:!text-5xl lg:!text-center lg:!text-6xl md:!text-5xl sm:!text-3xl"
                   />
                   <AnimatedText
-                    text="I'm Parsa Peikani, a self-made software engineer :)"
+                    text="I'm Parsa Peikani"
                     className="!text-5xl !text-left xl:!text-5xl lg:!text-center lg:!text-6xl md:!text-5xl sm:!text-3xl"
+                  />
+                  <AnimatedText
+                    text="A self-made software engineer :)"
+                    className="!text-4xl !text-left xl:!text-5xl lg:!text-center lg:!text-6xl md:!text-5xl sm:!text-3xl"
                   />
                   <motion.p
                     className="my-4 text-base font-medium text-justify md:text-sm sm:text-xs"
@@ -85,10 +89,10 @@ export default function Home() {
                     transition={{ duration: 1, ease: "easeInOut" }}
                   >
                     {" "}
-                    As a dedicated full-stack developer, I am passionate about
-                    transforming ideas into cutting-edge web applications. I
-                    invite you to explore my portfolio and projects, where you
-                    can witness my expertise in React.js and web development.
+                    As a dedicated full-stack developer, I excel at bringing
+                    innovative ideas to life through advanced web applications.
+                    Explore my portfolio and projects to see my expertise in
+                    Full Stack and web development in action.
                   </motion.p>
                   <div className="flex items-center self-start mt-2 lg:self-center">
                     <motion.a

@@ -280,12 +280,12 @@ const projects = () => {
             className="mb-16 dark:text-yellow-400 2xl:!text-7xl sm:mb-8 sm:text-4xl xs:text-2xl"
           />
           <div className="grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0">
-            <motion.div
+            {/* <motion.div
               className="col-span-12"
               initial="offscreen"
               whileInView="onscreen"
               viewport={{ once: true, amount: 0.1 }}
-              variants={top1Variant}
+              variants={top2Variant}
             >
               <UpcomingProject
                 title="BudgetGraph Pro"
@@ -294,6 +294,22 @@ const projects = () => {
                 link="/"
                 type="Solo Project"
                 github="/"
+              />
+            </motion.div> */}
+            <motion.div
+              className="col-span-12"
+              initial="offscreen"
+              whileInView="onscreen"
+              viewport={{ once: true, amount: 0.1 }}
+              variants={top1Variant}
+            >
+              <FeaturedProject
+                title="Budget Pro AI"
+                img={project2}
+                summary="Technologies used: Next.js 14, React, PLAID API, Clerk, ShadcnUI, MongoDB Developed a budget tracking app with Next.js 14 and React, integrating PLAID and Wealthsimple APIs for real‑time financial data synchronization from CIBC and TD bank accounts. Employed ShadCN UI for a responsive, modern user interface. Implemented dynamic financial visualization using NIVO charts on the dashboard to display and analyze spending patterns and budget adherence, enhancing user decision‑making. Created a transaction management page that allows sorting, editing, and detailed viewing of transactions via PLAID API webhooks, improving user engagement and transaction tracking accuracy."
+                link="https://www.youtube.com/watch?v=nJhYPSSRF48"
+                type="Solo Project"
+                github="https://github.com/ParsaPeikani/BudgetBuddy-Tracker"
               />
             </motion.div>
             <motion.div

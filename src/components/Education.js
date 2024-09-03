@@ -2,13 +2,14 @@ import { motion, useScroll } from "framer-motion";
 import AnimatedText from "./AnimatedText";
 import { useRef } from "react";
 import LiIcon from "./LiIcon";
+import { FaCircle } from "react-icons/fa";
 
-const Details = ({ type, time, place, info }) => {
+const Details = ({ type, time, place, infos }) => {
   const ref = useRef(null);
   return (
     <li
       ref={ref}
-      className="my-8 first:mt-0 last:mb-0 w-[60%] mx-auto flex flex-col items-center justify-between md:w-[80%]"
+      className="my-8 first:mt-0 last:mb-0 w-[60%] mx-auto flex flex-col justify-between md:w-[80%]"
     >
       <LiIcon reference={ref} />
       <motion.div
@@ -22,7 +23,12 @@ const Details = ({ type, time, place, info }) => {
         <span className="capitalize font-medium text-dark/75 dark:text-yellow-400/75 xs:text-sm">
           {time} | {place}
         </span>
-        <p className="font-medium w-full md:text-sm">{info}</p>
+        {infos.map((info) => (
+          <div className="flex mt-4" key={info}>
+            <FaCircle className="text-xs mr-2 mt-2" />
+            <p className="font-medium w-full md:text-sm">{info}</p>
+          </div>
+        ))}
       </motion.div>
     </li>
   );
@@ -48,16 +54,18 @@ const Education = () => {
         <ul className="w-full flex flex-col items-start justify-between ml-4 xs:ml-2 sm:pl-4 xs:pl-8">
           <Details
             type="Bachelor Of Science In Computer Science"
-            time="2022-present"
+            time="2022 May - Present"
             place="University of Victoria (UVIC)"
-            info="Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial 
-            Intelligence."
+            infos={["Currently 3rd year student"]}
           />
           <Details
             type="Bachelor Of Science In Biochemisty"
-            time="2020-2022"
+            time="2020 Sep - 2022 Apr"
             place="University of Victoria (UVIC)"
-            info="Related courses included Organic Molecules, Types of Reactions, Metabolism and Regulation, and Enzymology."
+            infos={[
+              "2022 Dean's List",
+              "20,000 Excellent renewable entrance scholarship",
+            ]}
           />
         </ul>
       </div>
