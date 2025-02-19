@@ -53,16 +53,21 @@ const Education = () => {
         />
         <ul className="w-full flex flex-col items-start justify-between ml-4 xs:ml-2 sm:pl-4 xs:pl-8">
           <Details
-            type="Bachelor Of Science In Computer Science"
+            type="Computer Science Honours"
             time="2022 May - Present"
             place="University of Victoria (UVIC)"
-            infos={["Currently 3rd year student"]}
+            infos={[
+              "Bachelor of Science",
+              "Fourth year student",
+              "Expected graduation in September 2027",
+            ]}
           />
           <Details
-            type="Bachelor Of Science In Biochemisty"
+            type="Biochemisty"
             time="2020 Sep - 2022 Apr"
             place="University of Victoria (UVIC)"
             infos={[
+              "Bachelor of Science",
               "2022 Dean's List",
               "20,000 Excellent renewable entrance scholarship",
             ]}

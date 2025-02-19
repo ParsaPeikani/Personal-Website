@@ -70,10 +70,10 @@ const about = () => {
                 }}
               >
                 Hello, I&apos;m Parsa Peikani, a self-taught full-stack
-                developer and software engineer currently in my third year of
+                developer and software engineer now in my fourth year of
                 studying computer science at the University of Victoria. With
                 over two years of self-learning experience, I&apos;m passionate
-                about creating beautiful, functional, and user-centered digital
+                about crafting beautiful, functional, and user-centered digital
                 experiences.
               </motion.p>
               <motion.p
@@ -84,13 +84,9 @@ const about = () => {
                   duration: 2,
                 }}
               >
-                I&apos;m currently working on a project using C#, Azure, and
-                ASP.NET, technologies that I&apos;ll also be utilizing during my
-                upcoming Software Developer internship at Schneider Electric
-                from September to December 2024. This project not only
-                demonstrates my ability to develop high-performance, reliable,
-                and secure web applications but also reflects my keen interest
-                in gaining experience with new and emerging technologies.
+                Currently, I&apos;m enhancing my skills through courses at UVIC,
+                focusing on deepening my understanding of data structures and
+                algorithms, as well as advancing my system design capabilities.
               </motion.p>
               <motion.p
                 className="font-medium text-lg"
@@ -100,10 +96,10 @@ const about = () => {
                   duration: 2,
                 }}
               >
-                Please explore my website to view my previous projects, and feel
-                free to reach out if you have any questions or opportunities.
-                I&apos;m always eager to collaborate on new projects and
-                continue expanding my skillset.
+                Please visit my website to explore my portfolio of projects. If
+                you have any questions or see potential for collaboration,
+                I&apos;d love to hear from you. I am always eager to take on new
+                challenges and expand my expertise in innovative environments.
               </motion.p>
             </div>
             <div className="col-span-3 relative h-max rounded-2xl border-2 border-solid border-dark bg-light p-8 dark:bg-dark dark:border-yellow-400 xl:col-span-4 md:order-1 md:col-span-8">

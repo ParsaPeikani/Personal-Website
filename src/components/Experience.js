@@ -66,7 +66,11 @@ const Experience = () => {
             companyLink="https://www.se.com/ca/en/"
             time="Sep 2024 - Dec 2024"
             address="Victoria, CA"
-            works={["Coming Soon..."]}
+            works={[
+              "Refactored Schneider’s Sales portal application into a more desktop‑friendly version, automating the process of creating orders and upgrading licenses, which reduced the processing time from hours or days to mere minutes or seconds.",
+              "Resolved persistent Cypress testing errors in the application’s testing environment by identifying root causes and implementing robust fixes, enhancing test reliability and improving application security, ultimately ensuring seamless integration and deployment processes.",
+              "Refactored the Power Advisor page for license creation in the new sales portal app, improving design and functionality, which enhanced user experience and reduced processing times.",
+            ]}
           />
           <Details
             position="Full Stack Web Developer"
